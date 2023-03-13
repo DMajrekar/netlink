@@ -1013,7 +1013,7 @@ type Gretap struct {
 	EncapFlags uint16
 	Link       uint32
 	FlowBased  bool
-	IgnoreDF   uint8
+	IgnoreDF   uint16
 }
 
 func (gretap *Gretap) Attrs() *LinkAttrs {
