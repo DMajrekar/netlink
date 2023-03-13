@@ -1013,6 +1013,7 @@ type Gretap struct {
 	EncapFlags uint16
 	Link       uint32
 	FlowBased  bool
+	IgnoreDF   uint16
 }
 
 func (gretap *Gretap) Attrs() *LinkAttrs {
@@ -1210,6 +1211,7 @@ func (gtp *GTP) Type() string {
 }
 
 // Virtual XFRM Interfaces
+//
 //	Named "xfrmi" to prevent confusion with XFRM objects
 type Xfrmi struct {
 	LinkAttrs
